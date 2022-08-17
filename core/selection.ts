@@ -100,7 +100,9 @@ class Selection {
       this.scroll.batchStart();
     });
     this.root.addEventListener('compositionend', () => {
-      this.scroll.batchEnd();
+      setTimeout(()=>{
+        this.scroll.batchEnd();
+      });
       this.composing = false;
       if (this.cursor.parent) {
         const range = this.cursor.restore();

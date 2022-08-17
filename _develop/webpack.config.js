@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const pkg = require('../package.json');
-
 const bannerPack = new webpack.BannerPlugin({
   banner: [
     `Quill Editor v${pkg.version}`,
